@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="558.0" prefWidth="904.0" style="-fx-background-color: #e5e5e5;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controllers.AppController">
+   <children>
+      <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="14.0" layoutY="51.0" prefHeight="501.0" prefWidth="264.0" style="-fx-border-color: #76797e;" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="notesVBox" prefHeight="495.0" prefWidth="260.0" style="-fx-border-color: white; -fx-spacing: 2;" />
+         </content>
+      </ScrollPane>
+      <AnchorPane fx:id="notePane" layoutX="283.0" layoutY="51.0" prefHeight="501.0" prefWidth="610.0" style="-fx-background-color: white; -fx-border-color: #76797e;" />
+      <Button fx:id="addNewNoteButton" layoutX="247.0" layoutY="14.0" mnemonicParsing="false" onAction="#openNewNoteEditor" style="-fx-border-color: #76797e;" text="+">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
